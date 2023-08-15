@@ -103,3 +103,17 @@ function imageChanger() {
 setInterval(() => {
     imageChanger();
 }, 3000);
+
+
+
+// Extending Input Width Function
+function extend_width(e) {
+    var input = document.getElementById(e);
+    input.style.width = "35vw"
+}
+
+// Cutting Down Input Width Function
+function cut_down_width(e) {
+    var input = document.getElementById(e);
+    input.style.width = '25vw'
+}
