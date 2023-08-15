@@ -10,29 +10,45 @@
 </head>
 
 <body>
+  <!-- Home Section -->
+  
   <div id="main-container">
+    <img src="./Sources/peakpx.jpg" alt="" data-aos="fade-in">
     <nav id="nav1" data-aos="slide-down" data-aos-delay="300">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+      <h1>Irfan.</h1>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work-space">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
     </nav>
 
-    <img src="./Sources/main-image2.jpg" alt="" data-aos="fade-in">
-
+    <h2 data-aos="fade-in">BONJOUR, WORLD</h2>
     <div id="container">
       <h1 id="text"></h1>
     </div>
+    <h3 data-aos="fade-in">| Full Stack Web Developer | Freelancer |</h3>
 
-    <!-- <nav id="nav2" data-aos="slide-down" data-aos-delay="300">
-      <h5>MIL Cooperation</h5>
-      <h5>Logo</h5>
-    </nav> -->
+    <div id="social-link-container" data-aos="fade-in">
+      <div>
+        <i class="fa-brands fa-github" id="left-icon"></i>
+        <i class="fa-brands fa-codepen"></i>
+      </div>
+      <div>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram" id="right-icon"></i>
+      </div>
+    </div>
   </div>
   <br>
-  <h1 id="head-section">AbOut Me</h1>
+
+  <!-- About Section -->
+
   <div id="about" class="other-container">
+    <h1 id="head-section">AbOut Me</h1>
     <h1>I am a full stack web developer and C++ programmer with 5+ years of experience. I am proficient in a variety of
       front-end and back-end technologies, including HTML, CSS, JavaScript, React, Node.js, Python, MySQL, and MongoDB.
       I am also experienced in using C++ for game development and other high-performance applications.
@@ -63,6 +79,9 @@
     </div>
 
   </div>
+
+  <!-- Skills Section -->
+
   <h1 id="head-section">S-Kills</h1>
   <div id="skills" class="other-container">
     <h1>Programming Languages And Libraries,</h1>
@@ -85,23 +104,92 @@
     </il>
 
   </div>
-  <div id="portfolio" class="other-container">
-    <h1 id="head-section">My Workspace</h1>
-  </div>
-  <div id="contact" class="other-container">
-    <h1 id="head-section">Let's Collaborate</h1>
 
+   <!-- WorkSpce Section -->
+   <div id="work-space" class="other-container">
+    <h1 id="head-section" class="workspace">My Workspace</h1>
+    <br>
+      <div class="work-sample">
+        <img src="./Sources/openairsolution-image.PNG" alt="" srcset="" onclick="window.location.href = 'https://openairsolutions.in/'">
+        <h2>Open Air Solutions (Worked as a Freelancer)</h2>
+      </div>
+      <div class="work-sample">
+        <img src="./Sources/landing-page-image.PNG" alt="" srcset="" onclick="window.locatin.href = 'https://devil-564.github.io/CODSOFT/'">
+        <h2>Tech-Products Landing Page</h2>
+      </div>
+      <div class="work-sample">
+        <img src="./Sources/netflix-image.PNG" alt="" srcset="" onclick="window.location.href = 'https://devil-564.github.io/Netflix-Money_Heist_Edition/'">
+        <h2>Netflix Clone</h2>
+      </div>
+      <div class="work-sample">
+        <img src="./Sources/airbnb-image.PNG" alt="" srcset="" onclick="window.location.href = 'https://devil-564.github.io/AirBNB/'">
+        <h2>Air BNB Clone</h2>
+      </div>
+      <div class="work-sample">
+        <img src="./Sources/Everything-image.PNG" alt="" srcset="" onclick="windown.location.href = ''">
+        <h2>MERN Stack Shopping Website</h2>
+      </div>
+      <div class="work-sample" id="exception-work-sample">
+        <img src="./Sources/RPS-image.PNG" alt="" srcset="" onclick="window.location.href = 'https://devil-564.github.io/RPS---Game/'">
+        <h2>Rock Paper Scissors Game</h2>
+      </div>
+  </div>
+  <br>
+  <!-- Contact Image -->
+  <div id="contact" class="other-container">
+    <h1 id="head-section" style="margin-top: 1vw;">Let's Collaborate</h1>
+    <br>
+    <br>
     <form action="">
       <div>
-        <input type="text" name="" id="inp-name" placeholder="Your Name">
-        <input type="email" name="" id="inp-email" placeholder="Your Email">
-        <input type="tel" name="" id="inp-tel" placeholder="Your Contact">
+        <input type="text" name="" id="inp-name" placeholder="Your Name" onclick="extend_width('inp-name')" onblur="cut_down_width('inp-name')">
+        <input type="email" name="" id="inp-email" placeholder="Your Email" onclick="extend_width('inp-email')" onblur="cut_down_width('inp-email')">
+        <input type="tel" name="" id="inp-tel" placeholder="Your Contact" onclick="extend_width('inp-tel')" onblur="cut_down_width('inp-tel')">
         <button type="submit">SUBMIT</button>
       </div>
       <img src="./Sources/contact-form-side-image.jpg" alt="">
     </form>
+    <br>
+    <div id="footer">
+      <div id="footer-sub-container1">
+        <div>
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <h2>WHERE TO FIND ME</h2>
+          <p>Indra Nagar, New Yard Itarsi M.P, INDIA</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-at"></i>
+          <h2>EMAIL ME AT</h2>
+          <p>irfan007lohar@gmail.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <h2>CALL ME AT</h2>
+          <p>+91 &nbsp;&nbsp; 7222976619</p>
+        </div>
+      </div>
 
-  </div>
+      <div id="footer-sub-container2">
+        <p>@ Copyright 2023 | Developed By <span>Mohammad Irfan Lohar</span></p>
+        <button>MY RESUME</button>
+      </div>
+    </div>
+  </div>    
+
+  <!-- <div id="footer" class="other-container">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div>
+      <h2></h2>
+      <div>
+
+      </div>
+    </div>
+  </div> -->
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
