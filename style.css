@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Oswald:wght@300&family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-#main-container{
+#main-container {
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-#nav1, #nav2{
+#nav1
+{
     width: 100%;
-    height: 10vh;
+    height: 11vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,7 +25,7 @@
     background-color: rgba(20, 20, 20, 0.295);
 }
 
-#nav1 h1{
+#nav1 h1 {
     font-size: 2.5vw;
     font-family: 'Megrim', sans-serif;
     color: white;
@@ -32,7 +33,7 @@
 
 }
 
-#nav1 a, #nav2 h5{
+#nav1 a {
     text-decoration: none;
     font-size: 1.2vw;
     color: rgb(255, 255, 255);
@@ -45,14 +46,15 @@
     border-radius: 0%;
 }
 
-#nav1 a:hover, #nav2 h5:hover{
+#nav1 a:hover,
+#nav2 h5:hover {
     background-color: rgb(173, 12, 12);
     color: white;
     border-radius: 7%;
 }
 
 
-#main-container img{
+#main-container img {
     width: 100%;
     height: 100vh;
     filter: blur(0.75px);
@@ -60,12 +62,8 @@
     top: 0;
 }
 
-#nav2 h5{
-    transform: rotateZ(90deg);
-    font-weight: 300;
-}
 
-#main-container h2{
+#main-container h2 {
     position: absolute;
     font-size: 2vw;
     font-family: 'Rajdhani', sans-serif;
@@ -75,7 +73,7 @@
     font-weight: 400;
 }
 
-#main-container h3{
+#main-container h3 {
     position: absolute;
     font-size: 2vw;
     font-family: 'Rajdhani', sans-serif;
@@ -85,7 +83,7 @@
     font-weight: 400;
 }
 
-#social-link-container{
+#social-link-container {
     position: absolute;
     width: 100%;
     height: 10vh;
@@ -94,28 +92,31 @@
     justify-content: space-evenly;
 }
 
-#social-link-container:first-child, #social-link-container:last-child{
+#social-link-container:first-child,
+#social-link-container:last-child {
     width: 100%;
     height: 10vh;
 }
 
-#social-link-container:first-child i, #social-link-container:last-child i{
-    font-size: 4vw;
+#social-link-container:first-child i,
+#social-link-container:last-child i {
+    font-size: 5vw;
     color: white;
     transition: color 0.3s ease-in-out;
 }
 
-#social-link-container:first-child i:hover, #social-link-container:last-child i:hover{
+#social-link-container:first-child i:hover,
+#social-link-container:last-child i:hover {
     color: rgba(0, 0, 0, 0.575);
 }
 
 
 
-#left-icon{
-    margin-right:3vw ;
+#left-icon {
+    margin-right: 3vw;
 }
 
-#right-icon{
+#right-icon {
     margin-left: 4vw;
 }
 
@@ -154,39 +155,43 @@
         opacity: 0;
     }
 }
+
 /* Heading Section*/
-#head-section{
-    font-size: 8.5vw !important;
+
+#head-section {
+    font-size: 8vw !important;
     font-family: 'Megrim', cursive !important;
     text-align: center !important;
     background-color: rgba(255, 255, 255, 0) !important;
     transition: all 0.3s ease-in-out !important;
-    color:  black !important;
+    color: black !important;
     width: 80% !important;
-    margin: auto !important;
+    margin: auto;
 }
 
-#head-section:hover{
+#head-section:hover {
     background-color: rgb(173, 12, 12) !important;
-    color:  white !important;
+    color: white !important;
 }
+
 /* About Container */
 
-.other-container{
+.other-container {
     width: 100%;
     height: auto;
 }
 
-#about{
+#about {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
-#about h1{
+
+#about h1 {
     font-size: 1.5vw;
     font-family: 'Rajdhani', sans-serif;
     color: rgb(173, 12, 12);
@@ -194,11 +199,11 @@
     width: 60%;
 }
 
-#about a{
+#about a {
     margin: auto;
 }
 
-#about a i{
+#about a i {
     font-size: 5vw;
     color: black;
     transition: all 0.4s ease-in-out;
@@ -206,12 +211,12 @@
     transform: translateX(0vw);
 }
 
-#about a i:hover{
+#about a i:hover {
     transform: translateX(-0.5vw);
     transform: translateY(-0.5vw);
 }
 
-#about div{
+#about div {
     width: 30%;
     height: 90vh;
     display: flex;
@@ -221,7 +226,7 @@
     position: relative;
 }
 
-#about div img{
+#about div img {
     margin-top: 5vw;
     width: 20vw;
     height: 200vw;
@@ -233,7 +238,7 @@
 }
 
 
-#about div div{
+#about div div {
     width: 50%;
     /* display: flex;
     flex-direction: row;
@@ -246,21 +251,21 @@
 
 }
 
-#about div div i{
+#about div div i {
     font-size: 2.5vw;
-    color:black;
+    color: black;
     transition: all 0.2s ease-in-out;
     transform: skewX(10deg);
 }
 
-#about div div i:hover{
+#about div div i:hover {
     transform: skewX(-10deg);
     color: rgb(173, 12, 12);
 }
 
 /* Skills section */
 
-#skills{
+#skills {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -268,7 +273,7 @@
     align-items: center;
 }
 
-#skills h1{
+#skills h1 {
     font-size: 2.7vw;
     font-family: 'Syne', sans-serif;
     align-self: baseline;
@@ -276,7 +281,7 @@
     margin-left: 1.5vw;
 }
 
-#skills li{
+#skills li {
     font-size: 1.4vw;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 800;
@@ -284,14 +289,14 @@
     letter-spacing: 0.2vw;
 }
 
-#skills div{
+#skills div {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.skills-icon{
+.skills-icon {
     width: 10vw;
     height: 12vw;
     object-fit: contain;
@@ -299,21 +304,18 @@
     transition: all 0.4s ease-in-out;
 }
 
-.skills-icon:hover{
+.skills-icon:hover {
     filter: grayscale(0%);
 }
 
-il{
+il {
     list-style-type: disc;
     font-family: 'Rajdhani', sans-serif;
 }
 
 /* Work Space Section */
-.workspace{
-    margin-bottom: 3vw;
-}
 
-#work-space{
+#work-space {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -322,13 +324,13 @@ il{
     height: auto;
 }
 
-.work-sample{
+.work-sample {
     width: 40%;
     height: 35vw;
 }
 
 
-.work-sample img{
+.work-sample img {
     width: 35vw;
     height: 20vw;
     border-top-left-radius: 5%;
@@ -341,11 +343,11 @@ il{
     box-shadow: rgb(0, 0, 0) 0px 3px 8px;
 }
 
-.work-sample img:hover{
+.work-sample img:hover {
     filter: blur(0px);
 }
 
-.work-sample h2{
+.work-sample h2 {
     font-size: 1.5vw;
     margin-top: 0.3vw;
     font-family: 'Rajdhani', sans-serif;
@@ -353,11 +355,11 @@ il{
 
 /* Contact Section */
 
-#contact{
+#contact {
     overflow: hidden;
 }
 
-form{
+form {
     width: 99%;
     height: 78vh;
     display: flex;
@@ -367,7 +369,7 @@ form{
     margin: auto;
 }
 
-form div{
+form div {
     width: 55%;
     height: 100vh;
     display: flex;
@@ -376,13 +378,14 @@ form div{
     align-items: center;
 }
 
-form div input, form div button{
+form div input,
+form div button {
     margin-top: 5vw;
     font-size: 1.5vw;
 }
 
 
-form div input{
+form div input {
     border: 0px;
     border-bottom: 1px solid rgb(173, 12, 12);
     width: 25vw;
@@ -394,11 +397,12 @@ form div input{
     transition: all 0.3s ease-in-out;
 }
 
-form div input:active{
+form div input:active {
     width: 35vw;
 }
 
-form div button, #footer-sub-container2 button{
+form div button,
+#footer-sub-container2 button {
     width: 15vw;
     height: 3vw;
     font-family: 'Rajdhani', sans-serif;
@@ -410,24 +414,25 @@ form div button, #footer-sub-container2 button{
     transition: all 0.3s ease-in-out;
 }
 
-form div button:hover{
+form div button:hover {
     background-color: rgb(173, 12, 12);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
 }
 
-#footer-sub-container2 button:hover{
+#footer-sub-container2 button:hover {
     background-color: rgb(173, 12, 12);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
 
 }
 
-form div input:focus, form div button:focus{
+form div input:focus,
+form div button:focus {
     outline: none;
 }
 
-form img{
+form img {
     object-fit: contain;
     width: 30vw;
     height: 100vh;
@@ -437,7 +442,7 @@ form img{
 
 /* Footer Container */
 
-#footer{
+#footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -447,7 +452,7 @@ form img{
     background-color: rgba(0, 0, 0, 0.945);
 }
 
-#footer-sub-container1{
+#footer-sub-container1 {
     width: 100%;
     height: auto;
     display: flex;
@@ -456,23 +461,23 @@ form img{
     align-items: center;
 }
 
-#footer-sub-container1 div{
+#footer-sub-container1 div {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15vh;
+    height: 20vh;
     transition: all 0.3s ease-in-out;
 }
 
 
-#footer-sub-container1 div i{
+#footer-sub-container1 div i {
     text-align: center;
     font-size: 3vw;
     color: white;
 }
 
-#footer-sub-container1 div h2{
+#footer-sub-container1 div h2 {
     font-size: 1.5vw;
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -480,14 +485,14 @@ form img{
     letter-spacing: 3px;
 }
 
-#footer-sub-container1 div p{
+#footer-sub-container1 div p {
     font-size: 1.2vw;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     color: white;
-}   
+}
 
-#footer-sub-container2{
+#footer-sub-container2 {
     width: 95%;
     height: 10vh;
     display: flex;
@@ -495,8 +500,193 @@ form img{
     align-items: flex-end;
 }
 
-#footer-sub-container2 p{
+#footer-sub-container2 p {
     font-size: 1.2vw;
     font-family: 'Rajdhani', sans-serif;
     color: white;
+}
+
+@media screen and (max-width:884px) {
+
+    #head-section{
+        font-size: 9vw !important;
+    }
+
+/* Home Section */
+    #nav1{
+        height: 6vh;
+    }
+
+    #nav1 h1{
+        font-size: 4vw;
+    }
+
+    #nav1 a{
+        font-size: 2.2vw;
+    }
+
+    #main-container{
+        height: 50vh;
+    }
+
+    #main-container img{
+        height: 50vh;
+    }
+
+    #main-container h2{
+        top: 15%;
+        left: 38%;
+        font-size: 3.5vw;
+    }
+
+    #container{
+        top: 22%;
+        left: 12%;
+        font-size: 7vw;
+    }
+
+    #main-container h3{
+        top: 30%;   
+        left: 28%;
+        font-size: 2.7vw;
+    }
+
+    #social-link-container{
+        top: 40%;
+    }
+
+    #social-link-container div i {
+        font-size: 10em;
+    }
+    /* About Section */
+
+    .about-head {
+        margin-bottom: 3vw !important;
+    }
+
+    #about h1:not(:first-child) {
+        width: 100%;
+        font-size: 3vw;
+        margin: 0vw 2vw 0vw 2vw;
+    }
+
+    #about div {
+        width: 100%;
+        margin-top: 1vw;
+        height: 65vh;
+        justify-content: space-evenly;
+    }
+
+    #about div div{
+        height: 52vw;
+    }
+
+    #about div img {
+        width: 60vw;
+        height: 100vh;
+    }
+
+    #about div div i {
+        font-size: 6vw;
+        margin-bottom: 10vw;
+    }
+
+    /* SKills Section */
+
+    #skills {
+        height: 70vh;
+        justify-content: space-around;
+    }
+
+
+    #skills h1 {
+        font-size: 5vw;
+    }
+
+    #skills div {
+        flex-wrap: wrap;
+        height: 50vw;
+
+    }
+
+    .skills-icon {
+        width: 21vw;
+        height: 21vw;
+    }
+
+    #skills li {
+        font-size: 3.8vw;
+    }
+
+    /* Workspace Section*/
+
+    .workspace {
+        margin-top: 10vw !important;
+    }    
+
+    .work-sample img {
+        width: 39vw;
+        height: 25vw;
+    }
+
+    .work-sample h2{
+        font-size: 2.5vw;
+        font-weight: 900;
+        margin-top: 1vw;
+    }
+
+    /* Contact Section */
+
+    form{
+        height: 35vh;
+    }
+
+    form div{
+        width: 50%;
+    }
+
+    form div input{
+        font-size: 3vw;
+    }
+
+    form div button{
+        width: 25vw;
+        height: 5vw;
+        font-size: 3vw;
+    }
+
+    /* Footer section */
+    #footer{
+        height: 25vh;
+    }
+
+    #footer-sub-container1 div{
+        height: 10vh;
+    }
+
+    #footer-sub-container1 div i{
+        font-size: 7vw;
+    }
+
+    #footer-sub-container1 div h2{
+        font-size: 2.5vw;
+    }
+
+    #footer-sub-container1 div p{
+        font-size: 2vw;
+    }
+
+    #footer-sub-container2{
+        height: 5vh;
+    }
+
+    #footer-sub-container2 p{
+        font-size: 2.5vw;
+    }
+
+    #footer-sub-container2 button{
+        width: 25vw;
+        height: 5vw;
+
+    }
 }
