@@ -115,5 +115,5 @@ function extend_width(e) {
 // Cutting Down Input Width Function
 function cut_down_width(e) {
     var input = document.getElementById(e);
-    input.style.width = '25vw'
+    input.style.width = '30vw'
 }
