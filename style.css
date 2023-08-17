@@ -339,11 +339,13 @@ il {
     border-bottom-left-radius: 2%;
     border: 1px solid rgb(165, 165, 165);
     filter: blur(1px);
+    transform: translateY(0px);
     transition: all 0.5s ease-in-out;
     box-shadow: rgb(0, 0, 0) 0px 3px 8px;
 }
 
 .work-sample img:hover {
+    transform: translateY(-5px);
     filter: blur(0px);
 }
 
@@ -402,7 +404,7 @@ form div input:active {
 }
 
 form div button,
-#footer-sub-container2 button {
+#footer-sub-container2 button, #resume-btn {
     width: 15vw;
     height: 3vw;
     font-family: 'Rajdhani', sans-serif;
@@ -414,13 +416,13 @@ form div button,
     transition: all 0.3s ease-in-out;
 }
 
-form div button:hover {
+form div button:hover,  #resume-btn:hover  {
     background-color: rgb(173, 12, 12);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
 }
 
-#footer-sub-container2 button:hover {
+#footer-sub-container2 button:hover{
     background-color: rgb(173, 12, 12);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
