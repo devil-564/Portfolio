@@ -100,9 +100,10 @@
 
 #social-link-container:first-child i,
 #social-link-container:last-child i {
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: white;
     transition: color 0.3s ease-in-out;
+    overflow-y: hidden;
 }
 
 #social-link-container:first-child i:hover,
@@ -162,16 +163,16 @@
     font-size: 8vw !important;
     font-family: 'Megrim', cursive !important;
     text-align: center !important;
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0) ;
     transition: all 0.3s ease-in-out !important;
-    color: black !important;
+    color: black;
     width: 80% !important;
     margin: auto;
 }
 
 #head-section:hover {
-    background-color: rgb(173, 12, 12) !important;
-    color: white !important;
+    background-color: rgb(173, 12, 12) ;
+    color: white;
 }
 
 /* About Container */
@@ -181,20 +182,25 @@
     height: auto;
 }
 
+
 #about {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
 
+#about:hover #head-section{
+    background-color: rgb(173, 12, 12);
+    color: white;
 }
 
 
 #about h1 {
     font-size: 1.5vw;
     font-family: 'Rajdhani', sans-serif;
-    color: rgb(173, 12, 12);
+    color: black;
     font-weight: 900;
     width: 60%;
 }
@@ -273,6 +279,11 @@
     align-items: center;
 }
 
+#skills-main:hover .skills-head{
+    background-color: rgb(173, 12, 12);
+    color: white;
+}
+
 #skills h1 {
     font-size: 2.7vw;
     font-family: 'Syne', sans-serif;
@@ -324,6 +335,10 @@ il {
     height: auto;
 }
 
+#work-space:hover .workspace{
+    background-color: rgb(173, 12, 12);
+    color: white;
+}
 .work-sample {
     width: 40%;
     height: 35vw;
@@ -359,6 +374,11 @@ il {
 
 #contact {
     overflow: hidden;
+}
+
+#contact:hover .contact-head{
+    background-color: rgb(173, 12, 12);
+    color: white;
 }
 
 form {
@@ -477,6 +497,7 @@ form img {
     text-align: center;
     font-size: 3vw;
     color: white;
+    overflow-y: hidden;
 }
 
 #footer-sub-container1 div h2 {
@@ -622,12 +643,24 @@ form img {
 
     /* Workspace Section*/
 
+    #work-space {
+        flex-direction: column;
+    }
+
+    #work-space:hover .work-sample img{
+        filter: blur(0);
+    }
+
     .workspace {
         margin-top: 10vw !important;
     }    
 
+    .work-sample{
+        width: 60%;
+    }
+
     .work-sample img {
-        width: 39vw;
+        width: 100%;
         height: 25vw;
     }
 
@@ -690,5 +723,16 @@ form img {
         width: 25vw;
         height: 5vw;
 
+    }
+
+    #resume-btn{
+        width: 20vw;
+        height: 7vw;
+        padding-top: 1px;
+    }
+
+    #submit-btn{
+        padding-bottom: 0px !important;
+        font-size: 2vw !important;
     }
 }
