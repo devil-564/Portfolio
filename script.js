@@ -7,8 +7,8 @@ var count = 2;
 
 function typewriter() {
     text.style.setProperty('--backgroundColor', 'rgb(255, 255, 255)')
-    var str = "I am Mohammad Irfan Lohar"
-    var str1 = "And I am a MERN Stack Developer"
+    var str = "My Name is Mohd Irfan Lohar"
+    var str1 = "I am a Full Stack Web Developer"
     var count = 0;
 
     // String 1 Type State
